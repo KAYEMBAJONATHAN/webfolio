@@ -1,9 +1,11 @@
 <footer class="footer">
     <div class="footer-link">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">LinkedIn</a>
-        <a href="">Email</a>
+        <a (click)="OnHome()">Home</a>
+        <a (click)="OnAbout()">About</a>
+        <a (click)="OnContact()">Contact</a>
+        <a [href]="linkedIn">LinkedIn</a>
+        <a [href]="'mailto:' + emailAdress">Email</a>
     </div>
+
+    <p>$copy, 2025 Jonathan K All right reseved</p>
 </footer>
