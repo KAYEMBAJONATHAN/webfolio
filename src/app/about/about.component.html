@@ -1,21 +1,21 @@
 <div class="about-container">
     <div class="main-content">
-    <div class="education-sec" *ngIf="showEducation">
-       <div id="skills-section" class="skills-section">
-          <p style="font-size: 25px;color: #6ba;">Education</p>
-       </div>
-         <p>University Name</p>
-         <p>Degre</p>
-         <p>Graduation Year</p>
-    </div>-
-    <div class="pro-sec" *ngIf="showProjects">
-        <div id="skills-section" class="skills-section">
-            <p style="font-size: 25px;color: #6ba;">Project</p>
-        </div>
-        <div class="Project-card" *ngFor="let project of projects">
-             <h4>{{project.name}}</h4>
-             <p>{{project.description}}</p>
+        <div class="education-sec" *ngIf="showEducation">
+            <div id="skills-section" class="skills-section">
+                <p style="font-size: 25px;color: #6ba;">Education</p>
+            </div>
+            <p>University Name</p>
+            <p>Degre</p>
+            <p>Graduation Year</p>
+        </div>-
+        <div class="pro-sec" *ngIf="showProjects">
+            <div id="skills-section" class="skills-section">
+                <p style="font-size: 25px;color: #6ba;">Project</p>
+            </div>
+            <div class="Project-card" *ngFor="let project of projects">
+                <h4>{{project.name}}</h4>
+                <p>{{project.description}}</p>
+            </div>
         </div>
     </div>
-</div>
 </div>
